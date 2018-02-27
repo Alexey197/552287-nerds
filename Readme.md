@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Alex Danil](https://up.htmlacademy.ru/htmlcss/20/user/552287).
-* Наставник: `Неизвестно`.
+* Наставник: [Руслан Князев](https://up.htmlacademy.ru/htmlcss/20/user/208301).
 
 ---
 
