@@ -128,11 +128,30 @@
     <!--Скрытый слой-->
     <div class="feedback">
         <p>Напишите нам</p>
+
+      <div class="feedback_forms">
+        <form action="#" method="post" name="fedback_write">
+      </div>
+      <div class="feedback_forms item">
+        <input class="feedback-close" type="button" value="close" id="btn-close">
+      </div>
+      <div class="feedback_forms item">
+        <label for="feedback-name">Ваше имяЖ</label>
+        <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required>
+      </div>
+      <div class="feedback_forms item">
+        <label for="feedback-email">Ваш e-mail:</label>
+        <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+      </div>
+      <div class="feedback_forms item">
+        <textarea name="feedback-text" id="feedback-text" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
+      </div>
+      <div class="feedbac_forms item">
+        <button class="btn-send" type="submit">Отправить</button>
+      </div>
     </div>
-    <div class="feedback_forms"></div>
-    <div class="feedback_forms"></div>
-    <div class="feedback_forms"></div>
-    <div class="feedback_forms"></div>
+      </form>
+
 </main>
 <footer class="main-footer">
     <!--Карта и всплываюший банер с обратной связью-->
@@ -171,8 +190,8 @@
         <h3> Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
+  <div>Привет</div>
 </footer>
 <script src="js/script.js"></script>
-<div> привет</div>
 </body>
 </html>

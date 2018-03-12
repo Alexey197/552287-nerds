@@ -27,10 +27,64 @@
 
     <section class="product-filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--Форма фильтра товаров, позже-->
+      <form action="#" method="post" name="filters-form">
+        <p>Стоимость</p>
+        <div class="filters-range">
+          <input type="range" value="0" min="0" max="15000" step="500" name="range" id="range_low" class="filter__input-range">
+          <input type="range" value="13000" min="0" max="15000" step="500" name="range" id="range_high" class="filter__input-range">
+          <p class="range__amount">
+            <label for="range_low_output" class="range__output">от
+              <output name="priceoutput_low" id="range_low_output"></output>
+            </label>
+            <label for="range_high_output" class="range__output">до
+              <output name="priceoutput_high" id="range_high_output"></output>
+            </label>
+          </p>
+        </div>
+        <div class="filter__radio">
+          <p class="subtitle">Сетка</p>
+          <input type="radio" name="radio" id="radio-1" class="filter__input-radio">
+          <label for="radio-1">Адаптивная</label>
+          <input type="radio" name="radio" id="radio-2" class="filter__input-radio">
+          <label for="radio-2">Фиксированная</label>
+          <input type="radio" name="radio" id="radio-3" class="filter__input-radio">
+          <label for="radio-3">Резиновая</label>
+        </div>
+        <div class="filter__checkbox">
+          <p class="subtitle">Особенности</p>
+          <input type="checkbox" name="checkbox" id="checkbox-1" class="filter__input-checkbox">
+          <label for="checkbox-1">Слайдер</label>
+          <input type="checkbox" name="checkbox" id="checkbox-2" class="filter__input-checkbox">
+          <label for="checkbox-2">Блок преимуществ</label>
+          <input type="checkbox" name="checkbox" id="checkbox-3" class="filter__input-checkbox">
+          <label for="checkbox-3">Новости</label>
+          <input type="checkbox" name="checkbox" id="checkbox-4" class="filter__input-checkbox">
+          <label for="checkbox-4">Гелерея</label>
+          <input type="checkbox" name="checkbox" id="checkbox-5" class="filter__input-checkbox">
+          <label for="checkbox-5">Корзина</label>
+        </div>
+        <button type="submit" class="btn btn-filters">Показать</button>
+      </form>
     </section>
     <section class="sorting-filter">
-        <!--Форма сортировки товаров, позже-->
+      <p class="subtitle">Сортировать:</p>
+      <ul class="sorting__list">
+        <li class="sorting__item">
+          <a href="#" class="sorting__link">По цене</a>
+        </li>
+        <li class="sorting__item">
+          <a href="#" class="sorting__link">По типу</a>
+        </li>
+        <li class="sorting__item">
+          <a href="#" class="sorting__link">По названию</a>
+        </li>
+        <li class="sorting__item sorting__item-arrowup">
+          <a href="#" class="sorting__link"></a>
+        </li>
+        <li class="sorting__item sorting__item-arrowdown">
+          <a href="#" class="sorting__link"></a>
+        </li>
+      </ul>
     </section>
     <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
@@ -93,10 +147,28 @@
     <div class="feedback">
         <p>Напишите нам</p>
     </div>
-    <div class="feedback_forms"></div>
-    <div class="feedback_forms"></div>
-    <div class="feedback_forms"></div>
-    <div class="feedback_forms"></div>
+      <div class="feedback_forms">
+        <form action="#" method="post" name="feedback_write">
+          <div class="feedback_forms item">
+        <input class="feedback-close" type="button" value="close" id="btn-close">
+      </div>
+      <div class="feedback_forms item">
+        <label for="feedback-name">Ваше имяЖ</label>
+        <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required>
+      </div>
+      <div class="feedback_forms item">
+        <label for="feedback-email">Ваш e-mail:</label>
+        <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+      </div>
+      <div class="feedback_forms item">
+        <textarea name="feedback-text" id="feedback-text" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
+      </div>
+      <div class="feedback_forms item">
+        <button class="btn-send" type="submit">Отправить</button>
+      </div>
+      </form>
+    </div>
+
 </main>
 <footer class="main-footer">
     <!--Карта и всплываюший банер с обратной связью-->
