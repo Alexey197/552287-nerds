@@ -176,7 +176,9 @@ font-weight: bold;
 line-height: 18px;
 }
 input[type="text"],
-input[type="email"]{
+input[type="email"],
+textarea
+{
     font-size: 16px;
     line-height: 18px;
     border: 2px solid #000000 ;
@@ -184,9 +186,11 @@ input[type="email"]{
     opacity: 0.2;
 }
 input[type="text"]:hover,
-input[type="email"]:hover{
+input[type="email"]:hover,
+textarea:hover{
     opacity: 0.5;
 }
 input[type="text"]:focus,
-input[type="email"]:focus{
+input[type="email"]:focus,
+textarea:focus{
     opacity: 1.0;}
