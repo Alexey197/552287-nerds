@@ -125,6 +125,68 @@ h3{
     line-height: 45px;
 }
 dt{
-   font-size: 18px;
+   font-size: 16px;
     font-weight: bold;
 }
+table caption{
+  font-weight: bold;
+    line-height: 18px ;
+}
+th {
+    font-size: 45px;
+    font-weight: bold;
+}
+.partners-logo li{
+    display: inline-block;
+    list-style: none;
+    opacity: 0.5;
+
+}
+.partners-logo li:hover{
+    opacity: inherit;
+}
+
+.partners-logo li:active{
+    opacity: 0.2;
+}
+                /*Напишите нам*/
+.feedback-close{
+    background-image: url("../img/close-cross.svg") ;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 24px;
+    width: 25px;
+    border: none;
+    text-align: center;
+}
+.feedback-close:hover{
+    opacity: inherit;
+}
+.feedback-close:active{
+    opacity: 0.2;
+}
+.feedback p{
+  font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+.feedback label{
+    font-size: 16px;
+font-weight: bold;
+line-height: 18px;
+}
+input[type="text"],
+input[type="email"]{
+    font-size: 16px;
+    line-height: 18px;
+    border: 2px solid #000000 ;
+    border-radius: 2px;
+    opacity: 0.2;
+}
+input[type="text"]:hover,
+input[type="email"]:hover{
+    opacity: 0.5;
+}
+input[type="text"]:focus,
+input[type="email"]:focus{
+    opacity: 1.0;}

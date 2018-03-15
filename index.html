@@ -120,35 +120,36 @@
     </article>
     <figure class="partners">
         <ul class="partners-logo">
-            <li><img src="img/logo-1.jpg" width="199" height="68"  alt="Html academy"></li>
-            <li><img src="img/logo-2.jpg" height="87" width="209" alt="Barbershop Borodinski"></li>
-            <li><img src="img/logo-3.jpg" width="185" height="52" alt="Pink"></li>
-            <li><img src="img/logo-4.jpg" height="84" width="173" alt="Mishka"></li>
+            <li><a href="#"><img src="img/logo-1.png" width="199" height="68"  alt="Html academy"></a></li>
+            <li><a href="#"><img src="img/logo-2.png" height="87" width="209" alt="Barbershop Borodinski"></a></li>
+            <li><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a></li>
+            <li><a href="#"><img src="img/logo-4.png" height="84" width="173" alt="Mishka"></a></li>
         </ul>
     </figure>
     <!--Скрытый слой-->
     <div class="feedback">
         <p>Напишите нам</p>
-
-
+    </div>
+    <div class="feedback-forms">
         <form action="#" method="post" name="feedback-write">
-            <div class="feedback-forms item">
-        <input class="feedback-close" type="button" value="close" id="btn-close">
-      </div>
-      <div class="feedback_forms item">
-        <label for="feedback-name">Ваше имя:</label>
-        <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required>
-      </div>
-      <div class="feedback-forms item">
-        <label for="feedback-email">Ваш e-mail:</label>
-        <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
-      </div>
-      <div class="feedback-forms item">
-        <textarea name="feedback-text" id="feedback-text" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
-      </div>
-      <div class="feedback-forms item">
-        <button class="btn-send" type="submit">Отправить</button>
-      </div>
+            <div class="feedback-forms-item">
+                <input class="feedback-close" type="button" id="btn-close">
+            </div>
+            <div class="feedback-forms-item">
+                <label for="feedback-name">Ваше имя:</label>
+                <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required>
+            </div>
+            <div class="feedback-forms-item">
+                <label for="feedback-email">Ваш e-mail:</label>
+                <input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+            </div>
+            <div class="feedback-forms-item">
+                <label for="feedback-text">Текст письма:</label>
+                <textarea name="feedback-text" id="feedback-text" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
+            </div>
+            <div class="feedback-forms-item">
+                <button class="btn-send" type="submit">Отправить</button>
+            </div>
         </form>
     </div>
 
