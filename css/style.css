@@ -156,7 +156,7 @@ font-size: 18px;
 }
 .footer-loc,
 .footer-tel{
-font-size: 16;
+font-size: 16px;
     line-height: 18px;
 }
 .button-write{
@@ -244,7 +244,7 @@ textarea:focus{
 }
 .social-media li a:active,
 .social-media li a:focus{
-   background-image-color:#d7373b;
+   background:#d7373b;
 }
 .social-friendship h3{
     font-size: 36px;
@@ -255,3 +255,42 @@ textarea:focus{
     font-size: 16px;
     line-height: 24px;
 }
+       /*catalog*/
+.ready-shop{
+    background: #eeeeee;
+}
+.page-title{
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+}
+.cost,
+.subtitle{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.sorting-list{
+    list-style: none;
+}
+.sorting-link{
+    display: block;
+}
+.sorting-link{
+   font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.2;
+}
+.sorting-link:hover{
+    color: #000000;
+  opacity: 0.5;
+}
+.sorting-link:active{
+    color: #000000;
+    opacity: 1;
+}
+
+
+
+
