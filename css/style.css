@@ -218,8 +218,6 @@ textarea:focus{
     list-style: none;
     display: inline-block;
 }
-.social-media-item a{display: block;}
-
 .social-media li:first-child a{
     background-image: url("../img/vk-icon.svg");
     background-color:#e1e1e1 ;
@@ -232,12 +230,13 @@ textarea:focus{
     background-image: url("../img/insta-icon.svg");
     background-color: #e1e1e1;
 }
-.social-media-item a {
+.social-media a {
     background-repeat: no-repeat;
     background-position: center;
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    display: inline-block;
 }
 .social-media li a:hover{
     background-color: #e74246;
@@ -245,6 +244,7 @@ textarea:focus{
 .social-media li a:active,
 .social-media li a:focus{
    background:#d7373b;
+    opacity: 0.2;
 }
 .social-friendship h3{
     font-size: 36px;
@@ -265,7 +265,8 @@ textarea:focus{
     line-height: 55px;
 }
 .cost,
-.subtitle{
+.subtitle,
+.product-filters legend{
     font-size: 18px;
     font-weight: bold;
     line-height: 30px;
@@ -290,7 +291,26 @@ textarea:focus{
     color: #000000;
     opacity: 1;
 }
-
-
+.product-filters ul{
+    list-style: none;
+}
+.product-filters fieldset{
+    border: none;
+}
+.filter-input+label{
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.5;
+}
+.filter-input:hover+label,
+.filter-input:focus+label {
+    color: #000000;
+    opacity: 1;
+}
+.filter-input:disabled+label{
+    color: #000000;
+    opacity: 0.2;
+}
 
 
