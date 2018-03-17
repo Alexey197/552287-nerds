@@ -241,11 +241,8 @@ textarea:focus{
 .social-media li a:hover{
     background-color: #e74246;
 }
-.social-media li a:active,
-.social-media li a:focus{
-   background:#d7373b;
-    opacity: 0.2;
-}
+
+
 .social-friendship h3{
     font-size: 36px;
     font-weight: bold;
@@ -312,5 +309,82 @@ textarea:focus{
     color: #000000;
     opacity: 0.2;
 }
+.btn-filters{
+    background-color: #eeeeee;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+.btn-filters:hover{
+    background-color:#dfdfdf ;
+}
+.btn-filters:active,
+.btn-filters:focus{
+    background-color: #d5d5d5;
+    color: #000000;
+    opacity: 0.5;
+    border-top: 2px solid #bfbfbf;
+}
+               /*Карточки каталога   */
+
+.catalog-item-price{
+    background-color:#eeeeee ;
+}
+.catalog-item-price h3{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.catalog-item-price p{
+    font-size: 16px;
+    line-height: 18px;
+    color: #a9a9a9;
+}
+.catalog-item-price a{
+    background-color:#fb565a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.browser svg path:hover{
+    fill: #e9e9e9 ;
+}
+.catalog-item-price a:hover{
+  background-color: #e74246;
+ }
+.catalog-item-price a:active,
+.catalog-item-price a:focus{
+    background-color:#d7373b ;
+}
+.pagination-list{
+    list-style: none;
+}
+.pagination-item a{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    color: #000000;
+}
+.pagination-item a:hover{
+    background-color:#dfdfdf ;
+}
+.pagination-item a:active,
+.pagination-item a:focus{
+    background-color: #d5d5d5;
+    color: #000000;
+    opacity: 0.5;
+    border-top: 2px solid #bfbfbf;
+
+}
+.pagination-item .current{
+    background-color: #ffffff;
+    border: 2px solid #dfdfdf;
+}
+
 
 
