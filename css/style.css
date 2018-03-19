@@ -16,6 +16,8 @@ a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    display: inline-block;
+    text-align: center;
 }
 .site-navigation,
 .user-basket{
@@ -218,30 +220,30 @@ textarea:focus{
     list-style: none;
     display: inline-block;
 }
-.social-media li:first-child a{
-    background-image: url("../img/vk-icon.svg");
-    background-color:#e1e1e1 ;
-}
-.social-media li:nth-child(n+2) a{
-     background-image: url("../img/fb-icon.svg") ;
-     background-color: #e1e1e1;
- }
-.social-media li:last-child a{
-    background-image: url("../img/insta-icon.svg");
-    background-color: #e1e1e1;
-}
 .social-media a {
-    background-repeat: no-repeat;
-    background-position: center;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     display: inline-block;
+    background-color: #e1e1e1;
 }
-.social-media li a:hover{
+.social-media svg{
+    position: relative;
+    top: 30px;
+}
+.social-media svg:active path{
+    fill: #e37376 ;
+}
+.social-media svg:focus path{
+    fill: #e37376 ;
+}
+.social-media a:active,
+.social-media a:focus{
+    background-color:#d7373b;
+}
+.social-media a:hover{
     background-color: #e74246;
 }
-
 
 .social-friendship h3{
     font-size: 36px;
