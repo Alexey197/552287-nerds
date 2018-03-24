@@ -10,33 +10,39 @@
 </head>
 
 <body>
-<!--<header class="main-header">-->
-    <!--<div class="wrapper">-->
-        <!--<div class="navigation-panel">-->
-            <!--<div class="logo-container">-->
-              <!--<a href="/">-->
-               <!--<img src="img/nerds-logo.svg" class="main-logo" width="160" height="65" alt="Логотип">-->
-              <!--</a>-->
-            <!--</div>-->
-         <!--</div>-->
-            <!--<nav class="main-navigation">-->
-                <!--<a href="#">Студия</a>-->
-                <!--<a href="#">Клиенты</a>-->
-                <!--<a href="#">Магазин</a>-->
-                <!--<a href="#">Контакты</a>-->
-                <!--<a href="#">Корзина</a>-->
-            <!--</nav>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</header>-->
-<header class="main-header"></header>
-    <section class="slider">
-        <div class="container">
+
+
+
+    <div class="container">
+        <header class="main-header">
+
+        <div class="navigation-panel">
+            <div class="logo-container">
+              <a href="/">
+               <img src="img/nerds-logo.svg" class="main-logo" width="160" height="65" alt="Логотип">
+              </a>
+            </div>
+
+            <nav class="main-navigation">
+                <a href="#">Студия</a>
+                <a href="#">Клиенты</a>
+                <a href="#">Магазин</a>
+                <a href="#">Контакты</a>
+                <a href="#">Корзина</a>
+            </nav>
+        </div>
+
+
+       <section class="slider">
+
             <h2 class="visually-hidden">Преимущества</h2>
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="product-3" name="toggle">
           <div class="slider-controls">
-              <i class="active"></i>
-              <i></i>
-              <i></i>
+              <label for="product-1" class="slider-controls-item slider-controls-item--1">Первый</label>
+              <label for="product-2" class="slider-controls-item slider-controls-item--1">Второй</label>
+              <label for="product-3" class="slider-controls-item slider-controls-item--1">Третий</label>
           </div>
             <ul class="slider-list">
                 <li class="slider-item">
@@ -58,17 +64,17 @@
                     <a href="#" class="slider-item-button button">Узнать больше</a>
                 </li>
             </ul>
-        </div>
-    </section>
+       </section>
 
-
+ </header>
+    </div>
 
 
 
 
 <main>
     <section class="services">
-        <div class="wrapper">
+        <div class="container">
         <h2 class="visually-hidden">Услуги</h2>
 
         <div class="services-list container">
