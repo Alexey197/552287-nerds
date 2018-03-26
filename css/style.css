@@ -99,6 +99,17 @@ color:#fb565a ;
 {
 color: #a6a6a6;
 }
+.catalog-page{
+ height: 355px;
+}
+
+.catalog-title{
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: center;
+    margin-bottom: 115px;
+}
 /*Slider*/
 .slider{
 position: relative;
@@ -490,7 +501,8 @@ font-size: 26px ;
                 /*Всплываюший банер с обратной связью*/
 .contacts{
     background: url("../img/layer_map.jpg") no-repeat;
-    background-position: center;
+    background-size: cover;
+    background-color: #eeeeee;
     padding-top: 55px;
     padding-bottom: 55px;
     margin-top: 80px;
@@ -505,7 +517,7 @@ font-size: 26px ;
     width:320px ;
     height: 314px ;
     padding: 32px 50px 50px 46px;
-    margin-left: 100px;
+    margin-left:0px;
     background: #ffffff;
     border: 1px solid #ffffff;
 }
@@ -534,6 +546,7 @@ font-size: 18px;
     font-weight:500;
     color: #ffffff;
     background-color: #fb565a;
+    border-radius: 3px;
 
 }
 
@@ -598,9 +611,9 @@ input:invalid{
 }
 .social-media{
 
-    margin:0;
+
     padding: 0;
-    margin-top: 62px;
+    margin: 62px 0;
 }
 .social-media li{
     list-style: none;
@@ -639,7 +652,7 @@ input:invalid{
 }
 .footer-social-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -647,9 +660,11 @@ input:invalid{
     font-size: 36px;
     font-weight: bold;
     line-height: 36px;
+    margin: 26px 218px 0 0;
 }
 .social-friendship p{
     font-size: 16px;
+    margin-top: 10px;
 }
        /*catalog*/
 .ready-shop{
@@ -687,6 +702,111 @@ input:invalid{
     color: #000000;
     opacity: 1;
 }
+                          /*Ползунки      */
+
+.filter-item{
+    margin: 0;
+    padding: 0;
+
+    border: none;
+}
+
+.range-filter{
+    width: 260px;
+    margin-top: 49px;
+}
+
+.filter-item legend{
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.range-controls{
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    background-color: #f1f1f1;
+
+    border-radius: 5px;
+
+}
+.range-controls .scale{
+    height: 2px;
+
+    background: #d7dcde;
+}
+.range-controls .bar{
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+    padding: 2px;
+
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min{
+    left:18px;
+}
+
+.range-controls .toggle-max{
+    left:160px;
+}
+
+.price-controls{
+    font-size: 0;
+}
+.price-controls label {
+    display: inline-block;
+    width: 50%;
+
+    font-size: 16px;
+    text-transform: uppercase;
+}
+ .price-controls input {
+     width: 60px;
+     padding: 8px 10px;
+     margin-left: 10px;
+
+     font-family: Roboto Arial sans-serif;
+     font-size: 16px;
+     text-align: center;
+     color: #283136;
+
+     border: none;
+     border-radius: 5px;
+     background: #f1f1f1;
+ }
+
+ .max-price{
+     text-align: right;
+ } 
+
+
+
+
+
+
+
+
 .product-filters ul{
     list-style: none;
 }
