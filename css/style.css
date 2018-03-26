@@ -445,9 +445,7 @@ font-size: 26px ;
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee ;
 }
-/*.partners-logo li a{*/
-    /*display: block;*/
-/*}*/
+
 .partners-logo{
     display: flex;
     justify-content: space-between;
@@ -481,12 +479,7 @@ font-size: 26px ;
     right: -20px;
 }
 
-    /*width: 200px;*/
-    /*height: 100px;*/
-    /*text-align: center;*/
 
-
-/*}*/
 .partners-logo li:hover{
     opacity: inherit;
 }
@@ -495,22 +488,62 @@ font-size: 26px ;
     opacity: 0.2;
 }
                 /*Всплываюший банер с обратной связью*/
+.contacts{
+    background: url("../img/layer_map.jpg") no-repeat;
+    background-position: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin-top: 80px;
+}
+
+.contacts-info a{
+    display: block;
+    text-align: center;
+}
+
+.contacts-info{
+    width:320px ;
+    height: 314px ;
+    padding: 32px 50px 50px 46px;
+    margin-left: 100px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+
 .footer-studio{
 font-size: 18px;
     font-weight: bold;
     line-height: 30px;
+    margin-bottom: 22px;
 }
 .footer-loc,
-.footer-tel{
+.footer-tel,
+.button-write{
     line-height: 18px;
 }
+
+.footer-tel{
+    margin-top: 18px;
+    margin-bottom: 37px;
+}
+
 .button-write{
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
     font-weight:500;
     color: #ffffff;
     background-color: #fb565a;
+
 }
 
                 /*Напишите нам*/
+.feedback-forms{
+    display: none;
+}
+.feedback{
+    display: none;
+}
 .feedback-close{
     background-image: url("../img/close-cross.svg") ;
     background-repeat: no-repeat;
@@ -559,20 +592,37 @@ input:invalid{
 
 
                   /*footer social*/
+.footer-social{
+    width: 270px;
+    margin: 0;
+}
+.social-media{
+
+    margin:0;
+    padding: 0;
+    margin-top: 62px;
+}
 .social-media li{
     list-style: none;
     display: inline-block;
+
+}
+.social-media li:not(:first-child){
+    margin-left: 5px;
 }
 .social-media a {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    display: inline-block;
+    display:block;
     background-color: #e1e1e1;
+    text-align: center;
+    vertical-align: middle;
 }
 .social-media svg{
     position: relative;
     top: 30px;
+
 }
 .social-media svg:active path{
     fill: #e37376 ;
@@ -586,6 +636,11 @@ input:invalid{
 }
 .social-media a:hover{
     background-color: #e74246;
+}
+.footer-social-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-friendship h3{
