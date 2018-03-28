@@ -100,7 +100,10 @@ color:#fb565a ;
 color: #a6a6a6;
 }
 .catalog-page{
- height: 355px;
+ height: 345px;
+}
+.catalog-title-block{
+    margin-top: 70px;
 }
 
 .catalog-title{
@@ -675,19 +678,60 @@ input:invalid{
     font-weight: 500;
     line-height: 55px;
 }
+
+
+
+
+
 .cost,
 .subtitle,
 .product-filters legend{
     font-size: 18px;
     font-weight: bold;
     line-height: 30px;
+    text-transform: uppercase;
 }
 .sorting-list{
+    margin: 52px 0 52px 0;
+    padding: 0;
+
+}
+
+.sorting-list li{
     list-style: none;
+    display: inline-block;
+
 }
-.sorting-link{
-    display: block;
+.sorting-list li:nth-child(2),
+.sorting-list li:nth-child(3),
+.sorting-list li:nth-child(4){
+    font-size:14px ;
+    line-height: 18px;
+    text-transform: uppercase;
 }
+.sorting-list li:nth-child(2){
+margin-left: 263px;
+}
+
+.sorting-list li:nth-child(3),
+.sorting-list li:nth-child(4) {
+margin-left: 22px;
+}
+
+.sorting-list li:nth-child(5){
+margin-left: 43px;
+}
+
+.sorting-list li:nth-child(6){
+margin-left: 13px;
+}
+
+
+
+
+
+
+
 .sorting-link{
    font-size: 14px;
     line-height: 18px;
@@ -702,7 +746,36 @@ input:invalid{
     color: #000000;
     opacity: 1;
 }
+                  /*центровка карточек товаров*/
+
+.centerer{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.catalog-item{
+    width: 360px;
+}
+.sorting-catalog-wrapper{
+    margin-left:140px;
+
+}
+.catalog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
                           /*Ползунки      */
+
+.product-filters-wrapper{
+    width: 260px;
+    border: 1px solid white;
+}
 
 .filter-item{
     margin: 0;
@@ -798,7 +871,7 @@ input:invalid{
 
  .max-price{
      text-align: right;
- } 
+ }
 
 
 
@@ -847,22 +920,41 @@ input:invalid{
                /*Карточки каталога   */
 
 .catalog-item-price{
+    width:360px ;
+    height: 230px;
+}
+
+
+.catalog-item-price{
     background-color:#eeeeee ;
+    text-align: center;
 }
 .catalog-item-price h3{
     font-size: 18px;
     font-weight: bold;
     line-height: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 25px 0 0 0 ;
 }
 .catalog-item-price p{
     line-height: 18px;
     color: #a9a9a9;
+    margin: 0;
+    padding: 15px 0 32px 0 ;
 }
 .catalog-item-price a{
     background-color:#fb565a;
     color: #ffffff;
     font-weight: 500;
     line-height: 18px;
+    text-transform: uppercase;
+
+    display: block;
+    width: 200px;
+    padding: 15px 30px;
+    margin: auto;
+
 }
 .browser svg path:hover{
     fill: #e9e9e9 ;
@@ -874,6 +966,11 @@ input:invalid{
 .catalog-item-price a:focus{
     background-color:#d7373b ;
 }
+
+
+
+
+
 .pagination-list{
     padding-top: 5px;
 }
