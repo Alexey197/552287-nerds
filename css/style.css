@@ -840,8 +840,8 @@ margin-left: 13px;
     text-transform: uppercase;
 }
  .price-controls input {
-     width: 60px;
-     padding: 8px 10px;
+     width: 77px;
+     padding: 10px 10px;
      margin-left: 10px;
 
      font-family: Roboto Arial sans-serif;
@@ -879,8 +879,42 @@ margin-left: 13px;
     color: #000000;
     opacity: 0.2;
 }
+          /*radio checkbox*/
+.filter-item{
+   margin-top: 58px;
+}
+.filter-features,
+.filter-features ul,
+.filter-features legend{
+    margin: 0;
+    padding: 0;
+}
+.filter-features{
+  margin-top: 55px;
+}
+.filter-features li{
+    padding-top: 15px;
+}
 
-.filter-input-checkbox:not(ch)
+.filter-radio:not(checked){
+    position: absolute;
+    opacity: 0;
+}
+
+.filter-radio:not(checked)+label{
+    position: relative;
+    left: 100px;
+}
+.filter-radio:not(checked)+label::before{
+    content: '';
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top:1px;
+    left:15px;
+}
+
+
 
 
 
