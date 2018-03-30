@@ -1030,10 +1030,22 @@ input:invalid {
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-
 }
 
-.filter-radio + label:active:after{
+.filter-input-checkbox + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -4px;
+    left: 2px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-radio:checked + label::before {
     content: "";
     display: block;
     position: absolute;
@@ -1042,6 +1054,19 @@ input:invalid {
     top: -4px;
     left: 2px;
     background-image: url("../img/radio-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -4px;
+    left: 2px;
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
