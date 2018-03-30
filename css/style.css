@@ -77,18 +77,36 @@ margin-top: 9px;
     padding-bottom: 10px;
 }
 .main-navigation a:nth-child(2){
-margin-right: 47px;
+  margin-right: 47px;
 }
 .main-navigation a:nth-child(4){
-margin-right: 283px;
+  margin-right: 283px;
 }
+.main-navigation a:nth-child(5){
+    position: relative;
+}
+.main-navigation a:nth-child(5)::before{
+    content: "";
+    position: absolute;
+    top:8px;
+    width: 16px;
+    height: 18px;
+    margin-left: -40px;
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+
+}
+
+
 
 .main-logo:hover,
 .main-logo:focus{
-opacity: 0.8;
+  opacity: 0.8;
 }
 .main-logo:active{
-opacity: 0.3;
+  opacity: 0.3;
 }
 
 .main-navigation a:hover
@@ -548,6 +566,29 @@ font-size: 18px;
     border-radius: 3px;
 
 }
+.button-write:hover{
+    background-color: #e74246;
+    color: #ffffff ;
+}
+.button-write:active,
+.button-write:focus{
+    background-color:#d7373b;
+    color: #e37376;
+}
+
+
+
+
+
+
+/*.btn-order-red:hover{*/
+    /*background-color: #e74246;*/
+    /*color: #ffffff ;*/
+/*}*/
+/*.btn-order-red:active{*/
+    /*background-color:#d7373b;*/
+    /*color: #e37376;*/
+/*}*/
 
                 /*Напишите нам*/
 .feedback-forms{
@@ -903,16 +944,21 @@ margin-left: 13px;
 
 .filter-radio:not(checked)+label{
     position: relative;
-    left: 100px;
+   padding-left: 100px;
 }
-.filter-radio:not(checked)+label::before{
-    content: '';
+.filter-radio+label::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top:-5px;
+    right:162px;
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    top:1px;
-    left:15px;
+    background-position: 0 0;
 }
+
+
 
 
 
