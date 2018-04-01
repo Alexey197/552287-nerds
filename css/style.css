@@ -53,6 +53,19 @@ a {
     clip: rect(0, 0, 0, 0);
 }
 
+  @keyframes bounce {
+      0% {transform: translateY(-2000px); }
+      70% {transform: translateY(30px);    }
+      90% {transform: translateY(-10px);   }
+      100% {transform: translateY(0);       }
+  }
+
+  @keyframes shake {
+      0%, 100%                           { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+      20%, 40%, 60%, 80%          { transform: translateX(10px); }
+  }
+
 .navigation-panel {
     display: flex;
     justify-content: space-between;
@@ -658,8 +671,14 @@ a {
 
 .modal-show {
     display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
 }
 
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
  .feedback-form input[type="text"],
  .feedback-form input[type="email"],
  .feedback-form textarea {
@@ -801,77 +820,6 @@ a {
     color: #e37376;
 }
 
-
-
-    /*.feedback{*/
-    /*display: flex;*/
-    /*align-items: end;*/
-/*}*/
-/*.feedback-forms {*/
-   /*width: 960px;*/
-    /*height: 593px;*/
-    /*border: 1px solid #000000;*/
-    /*!*margin: 0 auto 0 auto;*!*/
-/*}*/
-
-
-
-/*.feedback-close {*/
-    /*background-image: url("../img/close-cross.svg");*/
-    /*background-repeat: no-repeat;*/
-    /*opacity: 0.5;*/
-    /*height: 24px;*/
-    /*width: 25px;*/
-    /*border: transparent;*/
-    /*text-align: center;*/
-/*}*/
-
-/*.feedback-close:hover {*/
-    /*opacity: 1.0;*/
-/*}*/
-
-/*.feedback-close:active {*/
-    /*opacity: 0.2;*/
-/*}*/
-
-/*.feedback p {*/
-    /*font-size: 45px;*/
-    /*font-weight: 500;*/
-    /*line-height: 45px;*/
-/*}*/
-
-/*.feedback label {*/
-    /*font-weight: bold;*/
-    /*line-height: 18px;*/
-/*}*/
-
-/*input {*/
-    /*border: 2px solid #000000;*/
-/*}*/
-
-/*textarea {*/
-    /*line-height: 18px;*/
-    /*border: 2px solid #000000;*/
-    /*border-radius: 2px;*/
-    /*opacity: 0.2;*/
-/*}*/
-
-/*.feedback-forms-item input:hover,*/
-  /*textarea:hover {*/
-    /*opacity: 0.5;*/
-/*}*/
-
-/*.feedback-forms-item input:focus,*/
-/*textarea:focus {*/
-    /*opacity: 1.0;*/
-/*}*/
-
-/*input:invalid {*/
-    /*border: 2px solid #ef8184;*/
-    /*color: #ef8184;*/
-/*}*/
-
-/*footer social*/
 .footer-social {
     width: 270px;
     margin: 0;
