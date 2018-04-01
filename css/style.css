@@ -629,14 +629,19 @@
       background: url("../img/layer_map.jpg") no-repeat;
       background-size: cover;
       background-color: #eeeeee;
-      /*padding-top: 55px;*/
-      /*padding-bottom: 55px;*/
       position: relative;
+    overflow: hidden;
+    height: 418px;
   }
 
   .contacts-info a {
       display: block;
       text-align: center;
+  }
+
+  .contacts iframe {
+    width: 100%;
+    border: none;
   }
 
   .contacts-info {
@@ -650,6 +655,7 @@
       z-index: 100;
      top:55px;
   }
+
 
   .footer-studio {
       font-size: 18px;
@@ -877,7 +883,6 @@
       border-radius: 3px;
       color: #ffffff;
       background-color: #fb565a;
-      /*margin-bottom: 80px ;*/
   }
 
   .btn-modal:hover {
