@@ -244,9 +244,9 @@
       content: "";
 
       position: absolute;
-      top: 24px;
-      left: 24px;
-      z-index: 1;
+      top: 27px;
+      left: 15px;
+      z-index: -1;
 
       width: 18px;
       height: 18px;
@@ -398,6 +398,9 @@
   .services-item p:nth-of-type(1) {
       padding-bottom: 10px;
   }
+  .services-item:last-child{
+      margin-right: 0;
+  }
 
   .btn-order {
       font-weight: 500;
@@ -408,6 +411,7 @@
       width: 160px;
       text-align: center;
   }
+
 
   .btn-order-red {
       background-color: #fb565a;
@@ -508,11 +512,6 @@
       position: absolute;
       left: -35px;
       top: 10px;
-  }
-
-  .nerds-list-block {
-      width: 390px;
-
   }
 
   .nerds-list span {
@@ -630,9 +629,9 @@
       background: url("../img/layer_map.jpg") no-repeat;
       background-size: cover;
       background-color: #eeeeee;
-      padding-top: 55px;
-      padding-bottom: 55px;
-      /*margin-top: 80px;*/
+      /*padding-top: 55px;*/
+      /*padding-bottom: 55px;*/
+      position: relative;
   }
 
   .contacts-info a {
@@ -647,6 +646,9 @@
       margin-left: 0px;
       background: #ffffff;
       border: 1px solid #ffffff;
+      position: absolute;
+      z-index: 100;
+     top:55px;
   }
 
   .footer-studio {
@@ -706,8 +708,8 @@
       position: fixed;
       /*top: 50%;*/
       bottom: 200px;
-      left: 20%;
-
+      left: 0;
+      right: 0;
       margin-left: auto;
       margin-right: auto;
       z-index: 1000;
@@ -926,11 +928,11 @@
 
   }
 
-  .social-media svg:active path {
+  .social-media:active path {
       fill: #e37376;
   }
 
-  .social-media svg:focus path {
+  .social-media:focus path {
       fill: #e37376;
   }
 
@@ -1299,10 +1301,6 @@
 
   }
 
-  .catalog-item {
-      width: 360px;
-  }
-
   .sorting-catalog-wrapper {
       margin-left: 140px;
 
@@ -1312,9 +1310,6 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   }
@@ -1334,6 +1329,14 @@
   .catalog-item {
       position: relative;
       margin-bottom: 34px;
+      /*width: 360px;*/
+      flex-basis: calc(50% - 20px);
+  }
+
+
+
+  .catalog-item:nth-child(odd) {
+      margin-left: 40px;
   }
 
   .catalog-item:hover .browser svg path,
