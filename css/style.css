@@ -630,8 +630,6 @@
       background-size: cover;
       background-color: #eeeeee;
       position: relative;
-    overflow: hidden;
-    height: 418px;
   }
 
   .contacts-info a {
@@ -1289,8 +1287,7 @@
   .btn-filters:focus {
       background-color: #d5d5d5;
       color: #000000;
-      opacity: 0.5;
-      border-top: 2px solid #bfbfbf;
+      box-shadow: inset 0 2px 0 #bfbfbf;
   }
 
   /*Карточки каталога   */
@@ -1344,8 +1341,8 @@
       margin-left: 40px;
   }
 
-  .catalog-item:hover .browser svg path,
-  .catalog-item:focus .browser svg path {
+  .catalog-item:hover  path,
+  .catalog-item:focus path {
       fill: #4d4d4d;
   }
 
@@ -1376,9 +1373,13 @@
       font-size: 18px;
       font-weight: bold;
       line-height: 30px;
+      color: #000000;
       text-transform: uppercase;
       margin: 0;
       padding: 25px 0 0 0;
+  }
+  .catalog-item-title{
+    color: #000000;
   }
 
   .catalog-item-price p {
@@ -1388,26 +1389,28 @@
       padding: 15px 0 32px 0;
   }
 
-  .catalog-item-price a {
-      background-color: #fb565a;
-      color: #ffffff;
-      font-weight: 500;
-      line-height: 18px;
-      text-transform: uppercase;
+  .catalog-price{
+    background-color: #fb565a;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
 
-      display: block;
-      width: 200px;
-      padding: 15px 30px;
-      margin: auto;
-
+    display: block;
+    width: 200px;
+    padding: 15px 30px;
+    border-radius: 2px;
+    margin: auto;
   }
 
-  .catalog-item-price a:hover {
+
+
+  .catalog-price:hover {
       background-color: #e74246;
   }
 
-  .catalog-item-price a:active,
-  .catalog-item-price a:focus {
+  .catalog-price:active,
+  .catalog-price:focus {
       background-color: #d7373b;
       color: #e37376;
   }
@@ -1454,14 +1457,17 @@
       background-color: #d5d5d5;
       color: #000000;
       opacity: 0.5;
-      border-top: 2px solid #bfbfbf;
-
+      box-shadow: inset 0 2px 0 #bfbfbf;
   }
 
   .pagination-list .current {
       background-color: #ffffff;
       border: 2px solid #dfdfdf;
-
+  }
+  .pagination-list .current:active,
+  .pagination-list .current:focus {
+    background-color:#ffffff ;
+    box-shadow: none;
   }
 
 
