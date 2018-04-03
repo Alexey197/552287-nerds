@@ -232,6 +232,7 @@
       position: relative;
 
       display: inline-block;
+      vertical-align: top;
       width: 34px;
       height: 34px;
       padding: 24px;
@@ -516,6 +517,7 @@
 
   .nerds-list span {
       display: inline-block;
+      vertical-align: top ;
       margin: 53px 0 23px 0;
 
   }
@@ -630,6 +632,7 @@
       background-size: cover;
       background-color: #eeeeee;
       position: relative;
+      height: 418px
   }
 
   .contacts-info a {
@@ -908,6 +911,7 @@
   .social-media li {
       list-style: none;
       display: inline-block;
+      vertical-align: middle;
 
   }
 
@@ -1001,6 +1005,7 @@
   .sorting-list li {
       list-style: none;
       display: inline-block;
+      vertical-align: middle;
 
   }
 
@@ -1125,9 +1130,8 @@
 
   .price-controls label {
       display: inline-block;
+      vertical-align: middle;
       width: 50%;
-
-      font-size: 16px;
       text-transform: uppercase;
   }
 
@@ -1135,15 +1139,19 @@
       width: 77px;
       padding: 10px 10px;
       margin-left: 10px;
-
-      font-family: Roboto Arial sans-serif;
-      font-size: 16px;
       text-align: center;
       color: #283136;
-
       border: none;
       border-radius: 5px;
       background: #f1f1f1;
+  }
+  .price-controls label,
+  .price-controls input {
+      font-family: "Roboto", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      opacity: 0.7;
   }
 
   .max-price {
@@ -1161,7 +1169,7 @@
   .filter-input + label {
       line-height: 20px;
       color: #000000;
-      opacity: 0.5;
+      opacity: 0.7;
   }
 
   .filter-input:hover + label,
@@ -1348,7 +1356,6 @@
 
   .catalog-item-price {
       width: 360px;
-      height: 230px;
       background-color: #eeeeee;
       text-align: center;
 
@@ -1356,6 +1363,7 @@
       bottom: 0px;
       z-index: 100;
       display: none;
+      padding: 0 60px 45px 60px;
   }
 
   .catalog-item:hover,
@@ -1403,8 +1411,6 @@
     margin: auto;
   }
 
-
-
   .catalog-price:hover {
       background-color: #e74246;
   }
@@ -1422,7 +1428,7 @@
 
   .pagination-list a {
       display: inline-block;
-      vertical-align: bottom;
+      vertical-align: top;
       min-width: 50px;
       height: 50px;
       font-size: 16px;
