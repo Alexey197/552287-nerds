@@ -1018,13 +1018,12 @@
       color: #000000;
       opacity: 0.5;
   }
-  
+
   /*Ползунки      */
 
   .filter-item {
       margin: 0;
       padding: 0;
-
       border: none;
   }
 
@@ -1254,12 +1253,12 @@
       border: none;
   }
 
-  .btn-filters:hover {
+  .btn-filters:hover,
+  .btn-filters:focus {
       background-color: #dfdfdf;
   }
 
-  .btn-filters:active,
-  .btn-filters:focus {
+  .btn-filters:active {
       background-color: #d5d5d5;
       color: #000000;
       box-shadow: inset 0 2px 0 #bfbfbf;
@@ -1378,12 +1377,12 @@
     margin: auto;
   }
 
-  .catalog-price:hover {
+  .catalog-price:hover,
+  .catalog-price:focus {
       background-color: #e74246;
   }
 
-  .catalog-price:active,
-  .catalog-price:focus {
+  .catalog-price:active {
       background-color: #d7373b;
       color: #e37376;
   }
@@ -1421,12 +1420,12 @@
 
   }
 
-  .pagination-list a:hover {
+  .pagination-list a:hover,
+  .pagination-list a:focus {
       background-color: #dfdfdf;
   }
 
-  .pagination-list a:active,
-  .pagination-list a:focus {
+  .pagination-list a:active {
       background-color: #d5d5d5;
       color: #000000;
       opacity: 0.5;
