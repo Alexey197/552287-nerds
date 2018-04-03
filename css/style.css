@@ -157,7 +157,7 @@
   .catalog-page .main-navigation a:nth-child(3){
       position: relative;
   }
-  .catalog-page .main-navigation a:nth-child(3):before{
+  .navigation-current::before{
       content: "";
       width: 75px;
       height: 2px;
@@ -175,7 +175,8 @@
       opacity: 0.3;
   }
 
-  .main-navigation a:hover {
+  .main-navigation a:hover,
+  .main-navigation a:focus {
       color: #fb565a;
   }
 
@@ -416,12 +417,11 @@
 
   .btn-order-red {
       background-color: #fb565a;
-      color: #ffffff;
   }
 
-  .btn-order-red:hover {
+  .btn-order-red:hover,
+  .btn-order-red:focus {
       background-color: #e74246;
-      color: #ffffff;
   }
 
   .btn-order-red:active {
@@ -431,12 +431,11 @@
 
   .btn-order-green {
       background-color: #00ca74;
-      color: #ffffff;
   }
 
-  .btn-order-green:hover {
+  .btn-order-green:hover,
+  .btn-order-green:focus {
       background-color: #00bc6c;
-      color: #ffffff;
   }
 
   .btn-order-green:active {
@@ -446,12 +445,11 @@
 
   .btn-order-yellow {
       background-color: #efc84a;
-      color: #ffffff;
   }
 
-  .btn-order-yellow:hover {
+  .btn-order-yellow:hover,
+  .btn-order-yellow:focus {
       background-color: #efc84a;
-      color: #ffffff;
   }
 
   .btn-order-yellow:active {
@@ -541,7 +539,7 @@
 
   .nerds-average span:nth-child(2),
   .nerds-average span:nth-child(3) {
-      padding-left: 23px;
+      padding-left: 12px;
   }
 
   .nerds-average sup {
@@ -550,16 +548,24 @@
   }
 
   .nerds-lower span {
-      margin-top: 5px;
+      padding-top: 5px;
       line-height: 18px;
+      display: inline-block;
+      width: 120px ;
+      /*padding: 0;*/
+      margin: 0;
+  }
+
+  .nerds-lower span:nth-child(1) {
+      width: 100px;
   }
 
   .nerds-lower span:nth-child(2) {
-      padding-left: 30px;
+      padding-left: 14px;
   }
 
   .nerds-lower span:nth-child(3) {
-      padding-left: 24px;
+    padding-left: 10px;
   }
 
   .partners {
@@ -588,7 +594,7 @@
 
   .partners-logo li {
       position: relative;
-      opacity: 0.5;
+      opacity: 0.3;
   }
 
   .partners-item {
@@ -618,12 +624,13 @@
       right: -20px;
   }
 
-  .partners-logo li:hover {
-      opacity: inherit;
+  .partners-logo li:hover,
+  .partners-logo li:focus {
+      opacity: 1;
   }
 
   .partners-logo li:active {
-      opacity: 0.2;
+      opacity: 0.1;
   }
 
   /*Всплываюший банер с обратной связью*/
@@ -687,13 +694,12 @@
 
   }
 
-  .button-write:hover {
+  .button-write:hover,
+  .button-write:focus {
       background-color: #e74246;
-      color: #ffffff;
   }
 
-  .button-write:active,
-  .button-write:focus {
+  .button-write:active {
       background-color: #d7373b;
       color: #e37376;
   }
@@ -823,52 +829,28 @@
 
   .feedback-close{
       position: absolute;
-      top: 70px;
-      left: 830px;
-      width: 27px;
-      height: 27px;
+      top: 85px;
+      left: 850px;
+      width: 25px;
+      height: 25px;
       font-size: 0;
       background-color: transparent;
+      background-image: url("../img/close-cross.svg");
+      background-repeat: no-repeat;
       border: 0;
       cursor: pointer;
-  }
-
-  .feedback-close::before,
-  .feedback-close::after{
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 0;
-      width: 27px;
-      height: 5px;
-      background-color: #fb565a;
-      border-radius: 2px;
       opacity: 0.3;
   }
 
-  .feedback-close:hover::before,
-  .feedback-close:focus::before,
-  .feedback-close:hover::after,
-  .feedback-close:hover::after {
-      opacity: 1;
+  .feedback-close:hover,
+  .feedback-close:focus {
+      opacity: 1.0;
   }
 
-  .feedback-close:active::before,
-  .feedback-close:active::after{
+  .feedback-close:active {
       opacity: 0.1;
   }
 
-  .feedback-close::before{
-      -webkit-transform:  rotate(45deg);
-      -ms-transform:  rotate(45deg);
-      transform:  rotate(45deg);
-  }
-
-  .feedback-close::after{
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-  }
 
   .btn-modal{
       display: inline-block;
@@ -886,13 +868,13 @@
       background-color: #fb565a;
   }
 
-  .btn-modal:hover {
+  .btn-modal:hover,
+  .btn-modal:focus {
       background-color: #e74246;
       color: #ffffff;
   }
 
-  .btn-modal:active,
-  .btn-modal:focus {
+  .btn-modal:active {
       background-color: #d7373b;
       color: #e37376;
   }
@@ -1036,13 +1018,7 @@
       color: #000000;
       opacity: 0.5;
   }
-
-  .sorting-link:active {
-      color: #000000;
-      opacity: 1;
-  }
-
-
+  
   /*Ползунки      */
 
   .filter-item {
