@@ -93,7 +93,7 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      padding-top: 48px;
+      padding-top: 19px;
       padding-bottom: 0;
       margin-bottom: 0;
 
@@ -104,6 +104,7 @@
       height: 65px;
       -ms-flex-item-align: start;
       align-self: flex-start;
+    padding: 85px 0 0 0  ;
   }
 
   .main-navigation {
@@ -115,7 +116,7 @@
       align-items: center;
       width: 800px;
       margin: 0;
-      padding: 0;
+      padding: 0 0 0 360px;
   }
 
   .main-navigation a {
@@ -185,11 +186,11 @@
   }
 
   .catalog-page {
-      height: 345px;
+      height: 392px;
   }
 
   .catalog-title-block {
-      margin-top: 70px;
+      margin-top: 76px;
   }
 
   .catalog-title {
@@ -197,7 +198,6 @@
       font-weight: 500;
       line-height: 55px;
       text-align: center;
-      margin-bottom: 115px;
   }
 
   /*Slider*/
@@ -216,7 +216,7 @@
   .slider-controls {
       position: absolute;
       left: 50%;
-      bottom: 104px;
+      bottom: 117px;
       z-index: 100;
 
       width: 160px;
@@ -236,7 +236,7 @@
       vertical-align: top;
       width: 34px;
       height: 34px;
-      padding: 24px;
+      padding: 17px;
 
       border-radius: 50%;
       cursor: pointer;
@@ -246,8 +246,8 @@
       content: "";
 
       position: absolute;
-      top: 27px;
-      left: 15px;
+      top: 20px;
+      left: 8px;
       z-index: -1;
 
       width: 18px;
@@ -266,7 +266,7 @@
 
   .slider-item {
       display: none;
-      padding: 73px 0 80px 0;
+      padding: 46px 0 80px 0;
   }
 
   .slider-item:nth-child(1) {
@@ -319,7 +319,7 @@
   .slider-item h3 {
       max-width: 600px;
       margin: 0;
-      margin-bottom: 27px;
+      padding: 30px 0 26px  0;
 
       font-size: 55px;
       line-height: 55px;
@@ -335,7 +335,7 @@
   .button {
       display: block;
       width: 240px;
-      padding: 13px 0;
+      padding: 17px 0;
 
       font-size: 16px;
       line-height: 18px;
@@ -386,7 +386,7 @@
   .services-item a:nth-of-type(2),
   .services-item a:nth-of-type(3) {
       display: block;
-      margin-top: 22px;
+      margin-top: 18px;
       text-transform: uppercase;
   }
 
@@ -397,8 +397,8 @@
       color: #000000;
   }
 
-  .services-item p:nth-of-type(1) {
-      padding-bottom: 10px;
+  .services-item p {
+      padding-bottom: 12px;
   }
   .services-item:last-child{
       margin-right: 0;
@@ -407,11 +407,11 @@
   .btn-order {
       font-weight: 500;
       line-height: 18px;
-      color: #ffffff;
-      padding: 15px 30px;
+      padding: 16px 30px;
       border-radius: 3px;
       width: 160px;
       text-align: center;
+      color: #ffffff;
   }
 
 
@@ -654,8 +654,8 @@
 
   .contacts-info {
       width: 320px;
-      height: 314px;
-      padding: 32px 50px 50px 46px;
+      height: 310px;
+      padding: 32px 50px 50px 51px;
       margin-left: 0px;
       background: #ffffff;
       border: 1px solid #ffffff;
@@ -685,7 +685,7 @@
 
   .button-write {
       display: block;
-      padding: 15px;
+      padding: 16px;
       text-transform: uppercase;
       font-weight: 500;
       color: #ffffff;
@@ -886,7 +886,7 @@
 
   .social-media {
       padding: 0;
-      margin: 62px 0;
+      margin: 66px 0;
   }
 
   .social-media-item {
@@ -897,12 +897,12 @@
   }
 
   .social-media li:not(:first-child) {
-      margin-left: 5px;
+      margin-left: 9px;
   }
 
   .social-button {
-      width: 80px;
-      height: 80px;
+      width: 78px;
+      height: 78px;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -1037,6 +1037,7 @@
       line-height: 24px;
       text-transform: uppercase;
       font-weight: 700;
+      letter-spacing: 1px;
   }
 
   .range-controls {
@@ -1165,7 +1166,7 @@
   }
 
   .filter-features {
-      margin-top: 55px;
+      margin-top: 51px;
   }
   .filter-features-checkbox{
       margin-top: 44px;
@@ -1173,6 +1174,13 @@
   .filter-features li,
   .filter-features-checkbox li{
       padding-top: 15px;
+  }
+
+  /*.filter-features li:nth-child(3),*/
+  .filter-features-checkbox li:nth-child(3),
+  /*.filter-features li:nth-child(4),*/
+  .filter-features-checkbox li:nth-child(4) {
+      padding-top: 17px;
   }
 
   .filter-radio,
