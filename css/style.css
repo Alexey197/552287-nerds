@@ -204,8 +204,9 @@
       background-image: url("../img/cart-icon.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
-      opacity: 0.3;
   }
+
+
 
   .catalog-page .main-navigation a:nth-child(3) {
       position: relative;
@@ -219,15 +220,6 @@
       position: absolute;
       bottom: 6px;
       left: 0px;
-  }
-
-  .main-logo:hover,
-  .main-logo:focus {
-    color: #fb565a;
-  }
-
-  .main-logo:active {
-    color: #a6a6a6;
   }
 
   .main-navigation a:hover,
@@ -463,10 +455,13 @@
   .btn-order {
       font-weight: 500;
       line-height: 18px;
-      padding: 16px 30px;
+      padding: 16px 40px;
       border-radius: 3px;
       width: 160px;
+      height: 50px;
+      display: block;
       text-align: center;
+      vertical-align: middle;
       color: #ffffff;
   }
 
@@ -480,8 +475,9 @@
   }
 
   .btn-order-red:active {
+      color: rgba(255, 255, 255, 0.3);
       background-color: #d7373b;
-      color: #e37376;
+      box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   }
 
   .btn-order-green {
@@ -495,7 +491,8 @@
 
   .btn-order-green:active {
       background-color: #00aa62;
-      color: #4dc491;
+      color: rgba(255, 255, 255, 0.3);
+      box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   }
 
   .btn-order-yellow {
@@ -504,12 +501,13 @@
 
   .btn-order-yellow:hover,
   .btn-order-yellow:focus {
-      background-color: #efc84a;
+      background-color: #eab534;
   }
 
   .btn-order-yellow:active {
       background-color: #e5a722;
-      color: #edc265;
+      color: rgba(255, 255, 255, 0.3);
+      box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   }
 
   /*ДИЗАЙН СТУДИЯ ИЗ КРАСНОДАРА*/
@@ -648,7 +646,6 @@
 
   .partners-logo li {
       position: relative;
-      opacity: 0.3;
   }
 
   .partners-item {
@@ -678,12 +675,17 @@
       right: -20px;
   }
 
-  .partners-logo li:hover,
-  .partners-logo li:focus {
-      opacity: 1;
+  .partners-item {
+      opacity: 0.2;
   }
 
-  .partners-logo li:active {
+  .partners-item:hover,
+  .partners-item:focus {
+      opacity: 1;
+
+  }
+
+  .partners-item:active {
       opacity: 0.1;
   }
 
@@ -738,6 +740,8 @@
 
   .button-write {
       display: block;
+      width: 219px;
+      height: 50px;
       padding: 16px;
       text-transform: uppercase;
       font-weight: 500;
@@ -753,8 +757,9 @@
   }
 
   .button-write:active {
+      color: rgba(255, 255, 255, 0.3);
       background-color: #d7373b;
-      color: #e37376;
+      box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   }
 
   /*Напишите нам*/
@@ -929,8 +934,9 @@
   }
 
   .btn-modal:active {
+      color: rgba(255, 255, 255, 0.3);
       background-color: #d7373b;
-      color: #e37376;
+      box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   }
 
   .footer-social {
@@ -955,8 +961,8 @@
   }
 
   .social-button {
-      width: 78px;
-      height: 78px;
+      width: 79px;
+      height: 79px;
       border-radius: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -978,11 +984,13 @@
   }
 
   .social-button:active path {
-      fill: #e37376;
+      fill: #ffffff;
+      opacity: 0.3;
   }
 
   .social-button:active {
       background-color: #d7373b;
+      box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   }
 
   .footer-social-wrapper {
@@ -1071,7 +1079,7 @@
       font-size: 14px;
       line-height: 18px;
       color: #000000;
-      opacity: 0.2;
+      opacity: 0.3;
   }
 
   .sorting-link:hover,
@@ -1086,6 +1094,22 @@
       opacity: 1;
   }
 
+  .sorting-link-arrow path{
+      fill: #a6a6a6;
+      opacity: 0.2;
+  }
+
+  .sorting-link-arrow:hover path,
+  .sorting-link-arrow:focus path {
+      fill: #a6a6a6;
+      opacity: 1;
+  }
+
+  .sorting-item-arrow .current path,
+  .sorting-link-arrow:active path {
+      fill: #231f20;
+      opacity: 1;
+  }
 
   /*Ползунки      */
 
@@ -1325,6 +1349,8 @@
       border-radius: 3px;
       display: block;
       margin-top: 50px;
+      width: 260px;
+      height: 50px;
       padding: 16px 88px;
       border: none;
   }
@@ -1337,8 +1363,8 @@
   .btn-filters:active {
       background-color: #d5d5d5;
       color: #000000;
-      -webkit-box-shadow: inset 0 2px 0 #bfbfbf;
-      box-shadow: inset 0 2px 0 #bfbfbf;
+      -webkit-box-shadow: inset 0 3px 0 #bfbfbf;
+      box-shadow: inset 0 3px 0 #bfbfbf;
   }
 
   /*Карточки каталога   */
