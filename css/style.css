@@ -201,22 +201,23 @@
       position: relative;
   }
 
-  .navigation-current::before {
+  .navigation-current::after {
       content: "";
-      width: 75px;
+      width: 100%;
       height: 2px;
-      background-color: #e74246;
+      background-color: #fb565a;
       position: absolute;
       bottom: 6px;
+      left: 0px;
   }
 
   .main-logo:hover,
   .main-logo:focus {
-      opacity: 0.8;
+    color: #fb565a;
   }
 
   .main-logo:active {
-      opacity: 0.3;
+    color: #a6a6a6;
   }
 
   .main-navigation a:hover,
@@ -1063,10 +1064,18 @@
       opacity: 0.2;
   }
 
-  .sorting-link:hover {
+  .sorting-link:hover,
+  .sorting-link:focus {
       color: #000000;
-      opacity: 0.5;
+      opacity: 0.6;
   }
+
+  .sorting-link:active,
+  .sorting-item .current {
+      color: #000000;
+      opacity: 1;
+  }
+
 
   /*Ползунки      */
 
@@ -1487,13 +1496,14 @@
   }
 
   .pagination-list a:active {
-      padding: 16px 78px;
+      color: rgba(0, 0, 0, 0.3);
+      border-top: 3px solid #bfbfbf ;
   }
 
   .pagination-list .current {
       text-decoration: none;
       background-color: transparent;
-      border: 3px solid #dbdbdb;
+      /*border: 3px solid #dbdbdb;*/
       cursor: default;
       pointer-events: none;
 
