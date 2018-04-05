@@ -1484,7 +1484,8 @@
 
   .catalog-price:active {
       background-color: #d7373b;
-      color: #e37376;
+      box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+
   }
 
   .pagination-list {
@@ -1539,8 +1540,6 @@
   .pagination-list .current {
       text-decoration: none;
       background-color: transparent;
-      /*border: 3px solid #dbdbdb;*/
       cursor: default;
       pointer-events: none;
-
   }
