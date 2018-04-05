@@ -148,6 +148,16 @@
       padding: 85px 0 0 0;
   }
 
+  .logo-container:hover,
+  .logo-container:focus {
+      opacity: 0.8;
+  }
+
+  .logo-container:active {
+      opacity: 0.3;
+  }
+
+
   .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
